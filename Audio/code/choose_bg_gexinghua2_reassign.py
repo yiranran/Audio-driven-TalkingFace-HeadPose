@@ -272,7 +272,7 @@ def choose_bg_gexinghua2_reassign2(video, audio, start, audiomodel='', num=300, 
 			data[L:L+6] = sucai[assigns[i]]
 			data[L+6:L+8] = lm_5p[assigns[i]]
 			data[L+8] = assigns[i]+start
-			print(i,'assigni',assigns[i]+start,'lm_5p',lm_5p[assigns[i]])
+			#print(i,'assigni',assigns[i]+start,'lm_5p',lm_5p[assigns[i]])
 		savename = os.path.join(folder_to_process,'reassign','%05d.npy'%i)
 		np.save(savename, data)
 		if tran == 0 or tran == 2:

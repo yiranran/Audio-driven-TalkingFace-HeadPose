@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 ### Download pre-trained models
 - Including pre-trained general models and models needed for face reconstruction, identity feature extraction etc
-- Download from [here](https://pan.baidu.com/s/1V2W7dBTYzjBMqBL-1CIY2Q)(extract code:cf51) and copy to corresponding subfolders (Audio, Deep3DFaceReconstruction, render-to-video).
+- Download from [here](https://pan.baidu.com/s/1yAArGCkiKDICr0lM9U-_lw)(extract code:te4b) and copy to corresponding subfolders (Audio, Deep3DFaceReconstruction, render-to-video).
 
 ### Fine-tune on a target peron's short video
 - 1. Prepare a talking video of a single person that is 25 fps and longer than 12 seconds. Rename the video to [person_id].mp4 (e.g. 1.mp4) and copy to Data subfolder. You can make a video to 25 fps by 

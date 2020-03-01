@@ -3,7 +3,6 @@ debug*
 Models/
 */model/
 */checkpoints/
-*/results/
 */*.pyc
 */**/*.pyc
 */**/**/*.pyc
