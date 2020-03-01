@@ -21,7 +21,7 @@ def merge_with_bigbg(audiobasen,n):
 	audio_exp_name = 'atcnet_pose0_con3/'+person
 	audiomodel=os.path.join(audio_exp_name,audiobasen+'_%d'%audioepoch)
 	sample_dir = os.path.join('../results/',audiomodel)
-	ganmodel='memory_seq_p2p/%sold3'%person;post='_full9'
+	ganmodel='memory_seq_p2p/%s'%person;post='_full9'
 	seq='rseq_'+person+'_'+audiobasen+post
 	if audioepoch == 49:
 		seq='rseq_'+person+'_'+audiobasen+'_%d%s'%(audioepoch,post)

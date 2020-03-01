@@ -279,7 +279,7 @@ def choose_bg_gexinghua2_reassign2(video, audio, start, audiomodel='', num=300, 
 			shutil.copy(os.path.join(pngdir,'frame%d.png'%(assigns[i]+start)),
 				os.path.join(tardir2,'%05d.png'%i))
 		elif tran == 1:
-			print(os.path.join(pngdir,'frame%d_input2.png'%(assigns[i]+start)))
+			#print(os.path.join(pngdir,'frame%d_input2.png'%(assigns[i]+start)))
 			shutil.copy(os.path.join(pngdir,'frame%d_input2.png'%(assigns[i]+start)),
 				os.path.join(tardir2,'%05d.png'%i))
 	

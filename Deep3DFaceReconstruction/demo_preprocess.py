@@ -26,10 +26,10 @@ def demo_19news(n1,n2):
 	lm3D = load_lm3d()
 	n = 0
 	for n in range(n1,n2):
-		print(n)
+		#print(n)
 		start = 0
 		file = os.path.join('../Data',str(n),'frame%d.png'%start)
-		print(file)
+		#print(file)
 		if not os.path.exists(file[:-4]+'.txt'):
 			continue
 		img,lm = load_img(file,file[:-4]+'.txt')
@@ -38,7 +38,7 @@ def demo_19news(n1,n2):
 		img1 = Image.fromarray(input_img[:,:,::-1])
 
 		scale = 0.5 * (lm[0][0]-lm[1][0]) / (lm_new[0][0]-lm_new[1][0]) + 0.5 * (lm[3][0]-lm[4][0]) / (lm_new[3][0]-lm_new[4][0])
-		print(scale)
+		#print(scale)
 		trans = np.mean(lm-lm_new*scale, axis=0)
 		trans = np.round(trans).astype(np.int32)
 		w,h = img1.size
@@ -47,7 +47,7 @@ def demo_19news(n1,n2):
 		img1 = img1.resize((w2,h2),resample = Image.LANCZOS)
 		img.paste(img1,(trans[0],trans[1],trans[0]+img1.size[0],trans[1]+img1.size[1]))
 		np.save(os.path.join('../Data',str(n),'transbig.npy'),np.array([w2,h2,trans[0],trans[1]]))
-		print(os.path.join('../Data',str(n),'transbig.npy'))
+		#print(os.path.join('../Data',str(n),'transbig.npy'))
 		img.save('combine.png')
 
 if __name__ == '__main__':
