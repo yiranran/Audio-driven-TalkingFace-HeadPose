@@ -1,4 +1,4 @@
-import os, sys
+import os, sys, glob
 
 def get_news(n):
 	trainN=300; testN=100
