@@ -1,0 +1,12 @@
+.DS_Store
+debug*
+Models/
+*/model/
+*/checkpoints/
+*/results/
+*/*.pyc
+*/**/*.pyc
+*/**/**/*.pyc
+*/**/**/**/*.pyc
+*/**/**/**/**/*.pyc
+*/**/__pycache__
