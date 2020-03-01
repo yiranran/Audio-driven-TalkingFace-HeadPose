@@ -14,6 +14,10 @@ def get_news(n):
 	else:
 		cmd = "cd "+rootdir+"/..; matlab -nojvm -nosplash -nodesktop -nodisplay -r \"alpha_blend_newsold('" + video + "'," + str(start) + "," + str(trainN+testN) + "); quit;\""
 	os.system(cmd)
+	if not os.path.exists('datasets/list/trainA'):
+		os.makedirs('datasets/list/trainA')
+	if not os.path.exists('datasets/list/trainB'):
+		os.makedirs('datasets/list/trainB')
 	f1 = open('datasets/list/trainA/%s.txt'%name,'w')
 	f2 = open('datasets/list/trainB/%s.txt'%name,'w')
 	if 'win3' in name:
@@ -28,6 +32,10 @@ def get_news(n):
 		print(os.path.join(srcdir,'frame%d.png'%i),file=f2)
 	f1.close()
 	f2.close()
+	if not os.path.exists('datasets/list/testA'):
+		os.makedirs('datasets/list/testA')
+	if not os.path.exists('datasets/list/testB'):
+		os.makedirs('datasets/list/testB')
 	f1 = open('datasets/list/testA/%s.txt'%name,'w')
 	f2 = open('datasets/list/testB/%s.txt'%name,'w')
 	for i in range(start+trainN,start+trainN+testN):

@@ -17,6 +17,8 @@ def getsingle(srcdir,name,varybg=0,multi=0):
 	else:
 		imgs = glob.glob(os.path.join(srcroot,srcdir,'*_blend2.png'))
 		print('srcdir',os.path.join(srcroot,srcdir,'*_blend2.png'))
+	if not os.path.exists('../../render-to-video/datasets/list/testSingle'):
+		os.makedirs('../../render-to-video/datasets/list/testSingle')
 	f1 = open('../../render-to-video/datasets/list/testSingle/%s.txt'%name,'w')
 	imgs = sorted(imgs)
 	if multi:
