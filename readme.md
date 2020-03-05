@@ -1,8 +1,12 @@
-# Audio-driven Talking Face Video Generation with Natural Head Pose
+# Audio-driven Talking Face Video Generation with Learning-based Personalized Head Pose
 
-We provide PyTorch implementations for our arxiv paper "Audio-driven Talking Face Video Generation with Natural Head Pose"(http://arxiv.org/abs/2002.10137).
+We provide PyTorch implementations for our arxiv paper "Audio-driven Talking Face Video Generation with Learning-based Personalized Head Pose"(http://arxiv.org/abs/2002.10137).
 
 Note that this code is protected under patent. It is for research purposes only at your university (research institution) only. If you are interested in business purposes/for-profit use, please contact Prof.Liu (the corresponding author, email: liuyongjin@tsinghua.edu.cn).
+
+## Our Proposed Framework
+
+<img src = 'pipeline.jpg'>
 
 ## Prerequisites
 - Linux or macOS
@@ -22,7 +26,9 @@ pip install -r requirements.txt
 - Download from [here](https://pan.baidu.com/s/1yAArGCkiKDICr0lM9U-_lw)(extract code:te4b) and copy to corresponding subfolders (Audio, Deep3DFaceReconstruction, render-to-video).
 
 ### Fine-tune on a target peron's short video
-- 1. Prepare a talking video of a single person that is 25 fps and longer than 12 seconds. Rename the video to [person_id].mp4 (e.g. 1.mp4) and copy to Data subfolder. You can make a video to 25 fps by 
+- 1. Prepare a talking face video that satisfies: 1) contains a single person, 2) 25 fps, 3) longer than 12 seconds, 4) without large body translation (e.g. move from the left to the right of the screen). An example is [here](Data/31.mp4). Rename the video to [person_id].mp4 (e.g. 1.mp4) and copy to Data subfolder.
+
+Note: You can make a video to 25 fps by 
 ```bash
 ffmpeg -i xxx.mp4 -r 25 xxx1.mp4
 ```
@@ -65,4 +71,4 @@ This program will print 'saved to xxx.mov' if the videos are successfully genera
 It will output 2 movs, one is a video with face only (_full9.mov), the other is a video with background (_transbigbg.mov).
 
 ## Acknowledgments
-The face reconstruction code is from [Deep3DFaceReconstruction](https://github.com/microsoft/Deep3DFaceReconstruction), the arcface code is from [insightface](https://github.com/deepinsight/insightface), the gan code is based on [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
+The face reconstruction code is from [Deep3DFaceReconstruction](https://github.com/microsoft/Deep3DFaceReconstruction), the arcface code is from [insightface](https://github.com/deepinsight/insightface), the gan code is developed based on [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
