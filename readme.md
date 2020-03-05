@@ -4,6 +4,8 @@ We provide PyTorch implementations for our arxiv paper "Audio-driven Talking Fac
 
 Note that this code is protected under patent. It is for research purposes only at your university (research institution) only. If you are interested in business purposes/for-profit use, please contact Prof.Liu (the corresponding author, email: liuyongjin@tsinghua.edu.cn).
 
+We provide a demo video [here](https://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm) (please search for "Talking Face" in this page and click the "demo video" button).
+
 ## Our Proposed Framework
 
 <img src = 'pipeline.jpg'>
