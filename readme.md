@@ -72,5 +72,8 @@ python test_personalized.py [audio] [person_id] [gpu_id]
 This program will print 'saved to xxx.mov' if the videos are successfully generated.
 It will output 2 movs, one is a video with face only (_full9.mov), the other is a video with background (_transbigbg.mov).
 
+## Colab
+A colab demo is [here](https://colab.research.google.com/drive/1gqcqTSAGAyj48n0fmApvSPG_43BzKP37).
+
 ## Acknowledgments
 The face reconstruction code is from [Deep3DFaceReconstruction](https://github.com/microsoft/Deep3DFaceReconstruction), the arcface code is from [insightface](https://github.com/deepinsight/insightface), the gan code is developed based on [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
