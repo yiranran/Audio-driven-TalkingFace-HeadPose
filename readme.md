@@ -6,6 +6,8 @@ Note that this code is protected under patent. It is for research purposes only 
 
 We provide a demo video [here](https://cg.cs.tsinghua.edu.cn/people/~Yongjin/Yongjin.htm) (please search for "Talking Face" in this page and click the "demo video" button).
 
+[Colab](https://colab.research.google.com/drive/1gqcqTSAGAyj48n0fmApvSPG_43BzKP37)
+
 ## Our Proposed Framework
 
 <img src = 'pipeline.jpg'>
