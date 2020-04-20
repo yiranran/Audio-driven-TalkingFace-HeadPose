@@ -11,7 +11,8 @@ from PIL import Image
 # save image to the disk
 def save_images(webpage, visuals, image_path, aspect_ratio=1.0, width=256):
     image_dir = webpage.get_image_dir()
-    short_path = ntpath.basename(image_path[0])
+    short_path1 = ntpath.basename(ntpath.dirname(image_path[0]))
+    short_path = short_path1 + '-' + short_path
     name = os.path.splitext(short_path)[0]
 
     webpage.add_header(name)
