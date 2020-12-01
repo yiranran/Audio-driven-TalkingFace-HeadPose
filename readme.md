@@ -27,7 +27,11 @@ pip install -r requirements.txt
 
 ### Download pre-trained models
 - Including pre-trained general models and models needed for face reconstruction, identity feature extraction etc
-- Download from [BaiduYun](https://pan.baidu.com/s/1yAArGCkiKDICr0lM9U-_lw)(extract code:te4b) or [GoogleDrive](https://drive.google.com/open?id=1AwDmrSvmV7rktuWlptxVepxqDn8vTUp0) and copy to corresponding subfolders (Audio, Deep3DFaceReconstruction, render-to-video).
+- Download from [BaiduYun](https://pan.baidu.com/s/14-M5TQhNc24275W1ez-gJw)(extract code:usdm) or [GoogleDrive](https://drive.google.com/file/d/17xMNjNEsM0DhS9SKDdUQue0wlbz4Ww9o) and copy to corresponding subfolders (Audio, Deep3DFaceReconstruction, render-to-video).
+
+### Download face model for 3d face reconstruction
+- Download Basel Face Model from [https://faces.dmi.unibas.ch/bfm/main.php?nav=1-0&id=basel_face_model](https://faces.dmi.unibas.ch/bfm/main.php?nav=1-0&id=basel_face_model), and copy `01_MorphableModel.mat` to `Deep3DFaceReconstruction/BFM` folder
+- Download Expression Basis from CoarseData of [Guo et al.](https://github.com/Juyong/3DFace), and copy `Exp_Pca.bin` to `Deep3DFaceReconstruction/BFM` folder
 
 ### Fine-tune on a target peron's short video
 - 1. Prepare a talking face video that satisfies: 1) contains a single person, 2) 25 fps, 3) longer than 12 seconds, 4) without large body translation (e.g. move from the left to the right of the screen). An example is [here](Data/31.mp4). Rename the video to [person_id].mp4 (e.g. 1.mp4) and copy to Data subfolder.
