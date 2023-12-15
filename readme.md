@@ -1,6 +1,6 @@
 # Audio-driven Talking Face Video Generation with Learning-based Personalized Head Pose
 
-We provide PyTorch implementations for our arxiv paper "Audio-driven Talking Face Video Generation with Learning-based Personalized Head Pose"(http://arxiv.org/abs/2002.10137).
+We provide PyTorch implementations for our arxiv paper "Audio-driven Talking Face Video Generation with Learning-based Personalized Head Pose"(http://arxiv.org/abs/2002.10137), and our IEEE TMM paper "Predicting Personalized Head Movement From Short Video and Speech Signal" (https://ieeexplore.ieee.org/document/9894719).
 
 Note that this code is protected under patent. It is for research purposes only at your university (research institution) only. If you are interested in business purposes/for-profit use, please contact Prof.Liu (the corresponding author, email: liuyongjin@tsinghua.edu.cn).
 
@@ -85,6 +85,29 @@ It will output 2 movs, one is a video with face only (_full9.mov), the other is 
 
 ## Colab
 A colab demo is [here](https://colab.research.google.com/drive/1gqcqTSAGAyj48n0fmApvSPG_43BzKP37).
+
+## Citation
+If you use this code for your research, please cite our papers:
+
+```
+@article{yi2020audio,
+  title     = {Audio-driven talking face video generation with learning-based personalized head pose},
+  author    = {Yi, Ran and Ye, Zipeng and Zhang, Juyong and Bao, Hujun and Liu, Yong-Jin},
+  journal   = {arXiv preprint arXiv:2002.10137},
+  year      = {2020}
+}
+```
+```
+@article{YiYSZZWBL22,
+  title     = {Predicting Personalized Head Movement From Short Video and Speech Signal},
+  author    = {Yi, Ran and Ye, Zipeng and Sun, Zhiyao and Zhang, Juyong and Zhang, Guoxin and Wan, Pengfei and Bao, Hujun and Liu, Yong-Jin},
+  journal   = {IEEE Transactions on Multimedia}, 
+  volume    = {},
+  number    = {},
+  pages     = {1-13},
+  doi       = {10.1109/TMM.2022.3207606}
+}
+```
 
 ## Acknowledgments
 The face reconstruction code is from [Deep3DFaceReconstruction](https://github.com/microsoft/Deep3DFaceReconstruction), the arcface code is from [insightface](https://github.com/deepinsight/insightface), the gan code is developed based on [pytorch-CycleGAN-and-pix2pix](https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix).
