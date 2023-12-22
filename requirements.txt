@@ -38,7 +38,7 @@ networkx==2.3
 numba==0.44.1
 numpy==1.16.4
 olefile==0.46
-opencv-contrib-python==4.1.1.26
+opencv-contrib-python==4.2.0.32
 opencv-python==4.1.0.25
 pandas==0.25.1
 parso==0.5.0
