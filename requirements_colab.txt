@@ -2,7 +2,7 @@ absl-py==0.7.1
 astor==0.8.0
 audioread==2.1.8
 backcall==0.1.0
-certifi==2019.9.11
+certifi==2022.12.7
 cffi==1.12.3
 chardet==3.0.4
 colorthief==0.2.1
